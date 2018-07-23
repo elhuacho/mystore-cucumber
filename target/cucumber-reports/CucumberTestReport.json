@@ -1,0 +1,104 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3633706731,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Search.startUp()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Carrito de compras con un producto",
+        "description": "",
+        "id": "funcionalidad-de-agregar-producto-al-carrito-de-compras;carrito-de-compras-con-un-producto",
+        "after": [
+          {
+            "result": {
+              "duration": 915372621,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Search.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5765661661,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Se carga la página de búsqueda",
+            "match": {
+              "location": "Search.seCargaLaPáginaDeBúsqueda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1635950434,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Buscamos el término \"skirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "skirt",
+                  "offset": 21
+                }
+              ],
+              "location": "Search.buscamosElTérmino(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 823886841,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Agregamos el producto en el carrito de compras",
+            "match": {
+              "location": "Search.agregarElProductoEnElCarritoDeCompras()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99065635,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Se verifica que el carrito muestre \"1\" producto",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 36
+                }
+              ],
+              "location": "Search.seVerificaQueElCarritoMuestreProducto(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Funcionalidad de agregar producto al carrito de compras",
+    "description": "",
+    "id": "funcionalidad-de-agregar-producto-al-carrito-de-compras",
+    "keyword": "Feature",
+    "uri": "Search.feature"
+  }
+]
